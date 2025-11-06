@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    /* border: red 10px solid;  */
+}
+
+header {
+    background-color: #081E45;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+    height: 5%;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #00A3FF;
+    font-weight: bold;
+}
+
+main {
+    /* border: rgb(214, 130, 91) 10px solid; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 75%;
+    background-color: #f6f9fa;
+    align-items: center;
+}
+ 
+.transacao {
+    /* border: rgb(0, 0, 0) 2px solid; */
+    width: 50%;
+    height: 70%;
+    background-color: white;
+}
+
+section h2 {
+    height: 7%;
+    width: 100%;
+    margin: 30px 0 0 45px;
+    font-size: 20px;
+    color: #004AAD;
+    font-weight: 800;
+}
+
+form {
+    /* border: olive 2px solid; */
+    margin: 20px 0 0 45px;
+    display: flex;
+    flex-direction: column; 
+    width: 85%;
+    height: 50%;
+}
+
+label {
+    font-size: 16px;
+    color: #A4A2A2;
+}
+
+input {
+    width: 100%;
+    height: 10%;
+    border: #F5F5F5 2px solid;
+}
+
+.btn-pix {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #081E45;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-status {
+    width: 100%;
+    padding: 10px;
+    background-color: #F5F5F5;
+    color: #081E45;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#link-extrato {
+    /* border: orchid 2px solid; */
+    display: block;
+    margin: 20px 0 0 45px;
+    font-size: 16px;
+    color: #004AAD;
+    text-decoration: none;
+    height: 5%;
+    width: 100%;
+    font-weight: bold;
+}
+
+footer {
+    height: 12%;
+    width: 100%;
+    background-color: #081E45;
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}

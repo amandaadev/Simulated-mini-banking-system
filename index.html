@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Sistema Bancário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sistema de Detecção de Fraudes - PIX</h1>
+        </header>
+        <main>
+            <section class="transacao">
+                <h2>Nova Transação - PIX</h2>
+                <form> 
+                    <label for="from">De:</label>
+                    <input type="text" id="from" name="from" required>
+
+                    <label for="to">Para:</label>
+                    <input type="text" id="to" name="to" required>
+
+                    <label for="valor">Valor R$</label>
+                    <input type="number" id="valor" name="valor" required>
+                    <button class="btn-pix" type="submit">Enviar pix</button>
+                </form>
+
+                <button class="btn-status" type="submit">Aguardando transação</button>
+
+                <a id="link-extrato" href="#">Ver extrato</a>
+            </section>
+        </main>
+        <footer>
+            <p>Sistema acadêmico de simulação bancária | Projeto de Detecção de Fraudes</p>
+        </footer>
+    </div>
+</body>
+</html>
