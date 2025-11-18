@@ -1,22 +1,18 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: Arial, sans-serif;
+
 }
 
 html, body {
     height: 100%;
-    margin: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    height: 100%;
 }
 
 .container {
-    height: 100%;
-    width: 100%;
-    /* border: red 10px solid;  */
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -24,8 +20,6 @@ header {
     color: white;
     padding: 30px 0;
     text-align: center;
-    width: 100%;
-    height: 5%;
 }
 
 header h1 {
@@ -34,39 +28,32 @@ header h1 {
     font-weight: bold;
 }
 
-main {
-    /* border: rgb(214, 130, 91) 10px solid; */
+.pagina-pix main {
+    flex: 1;
+    background-color: #f6f9fa;
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 75%;
-    background-color: #f6f9fa;
     align-items: center;
 }
  
 .transacao {
-    /* border: rgb(0, 0, 0) 2px solid; */
+    background: white;
     width: 50%;
-    height: 70%;
-    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
 }
 
-section h2 {
-    height: 7%;
-    width: 100%;
-    margin: 30px 0 0 45px;
-    font-size: 20px;
+.transacao h2 {
+    margin-bottom: 20px;
     color: #004AAD;
+    font-size: 20px;
     font-weight: 800;
 }
 
 form {
-    /* border: olive 2px solid; */
-    margin: 20px 0 0 45px;
     display: flex;
-    flex-direction: column; 
-    width: 85%;
-    height: 50%;
+    flex-direction: column;
+    gap: 10px;
 }
 
 label {
@@ -75,9 +62,16 @@ label {
 }
 
 input {
-    width: 100%;
-    height: 10%;
-    border: #F5F5F5 2px solid;
+    border: #d3cccc 2px solid;
+    outline:none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.mensagem-status {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .btn-pix {
@@ -96,41 +90,75 @@ input {
 .btn-status {
     width: 100%;
     padding: 10px;
-    background-color: #F5F5F5;
+    background-color: #dfdede;
     color: #081E45;
     font-weight: bold;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    margin-bottom: 15px;
 }
 
 #link-extrato {
-    /* border: orchid 2px solid; */
-    display: block;
-    margin: 20px 0 0 45px;
-    font-size: 16px;
+    margin-top: 20px;
     color: #004AAD;
-    text-decoration: none;
-    height: 5%;
-    width: 100%;
     font-weight: bold;
+    text-decoration: none;
 }
 
 footer {
-    height: 12%;
-    width: 100%;
-    background-color: #081E45;
-    display: flex;
-    justify-content: center;
+    background: #081E45;
+    padding: 25px 0;
+    text-align: center;
+    margin-top: auto;
 }
 
 footer p {
-    text-align: center;
-    padding: 10px;
     color: white;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bold;
+}
+
+/* Extrato */
+
+.pagina-extrato main {
+    flex: 1;
+    background: #f6f9fa;
     display: flex;
+    justify-content: center;
     align-items: center;
+    padding: 40px 0;
+}
+
+.extrato-card {
+    background: white;
+    width: 60%;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background: #081E45;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+}
+
+.extrato-card a {
+    color: #004AAD;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
 }

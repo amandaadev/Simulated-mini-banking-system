@@ -6,7 +6,7 @@
     <title>Mini Sistema Bancário</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="pagina-pix">
     <div class="container">
         <header>
             <h1>Sistema de Detecção de Fraudes - PIX</h1>
@@ -23,17 +23,22 @@
 
                     <label for="valor">Valor R$</label>
                     <input type="number" id="valor" name="valor" required>
+                    <div class="mensagem-status">
                     <button class="btn-pix" type="submit">Enviar pix</button>
+                    <button class="btn-status" type="submit">Aguardando transação</button>
+                    </div>
                 </form>
-
-                <button class="btn-status" type="submit">Aguardando transação</button>
-
-                <a id="link-extrato" href="#">Ver extrato</a>
+                <div class="link-extrato">
+                <a id="link-extrato" href="extrato.html">Ver extrato</a>
+                </div>
             </section>
         </main>
+
+
         <footer>
             <p>Sistema acadêmico de simulação bancária | Projeto de Detecção de Fraudes</p>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
