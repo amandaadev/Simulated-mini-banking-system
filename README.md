@@ -2,6 +2,8 @@
 
 Um mini sistema bancário simulado desenvolvido para fins acadêmicos, com funcionalidades básicas como página de PIX, extrato, simulação de transações e interface simples em HTML, CSS e JavaScript.
 
+Deploy: [Simulated Mini Banking](https://amandaadev.github.io/Simulated-mini-banking-system/index.html)
+
 ## 📌 **Sobre o Projeto**
 
 Este projeto foi construído como uma atividade prática para simular o funcionamento básico de transações bancárias.
