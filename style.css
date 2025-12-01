@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     font-family: Arial, sans-serif;
-
 }
 
 html, body {
@@ -120,29 +119,31 @@ footer p {
     font-weight: bold;
 }
 
-/* Extrato */
-
+/* EXTRATO */
 .pagina-extrato main {
     flex: 1;
     background: #f6f9fa;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0;
+    padding: 40px 15px;
 }
 
 .extrato-card {
     background: white;
     width: 60%;
+    max-width: 900px;
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    overflow-x: auto;
 }
 
-table {
+.extrato-card table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    min-width: 600px; 
 }
 
 thead {
@@ -161,4 +162,44 @@ th, td {
     font-weight: bold;
     text-decoration: none;
     font-size: 16px;
+}
+
+@media (max-width: 900px) {
+    .extrato-card {
+        width: 80%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .extrato-card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    th, td {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .extrato-card a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .extrato-card {
+        padding: 15px;
+    }
+
+    th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
 }
